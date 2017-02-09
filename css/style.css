@@ -1,0 +1,207 @@
+html, body, #wrap {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrap {
+	display:table;
+	width:100%
+}
+/* if ie7 support is needed then set height of #wrap and header and footer to auto in CC's and just let it have a normal layout (or: *+html #wrap{height:auto})*/
+.header, .stickyfooter, .content {
+	display:block
+}/* ie7 and under*/
+.header, .stickyfooter, .content {
+	display:table-row
+}
+/* height 1px on the header and footer is the sticky footer technique */
+.header, .stickyfooter {
+	height:1px
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+
+.banner {
+			background-image: url(../images/logoBig.png);
+			height: 70px;
+		}
+.banner i {
+			margin-right: 10px;
+			font-size: 28px;
+			margin-top: 22px;
+		}
+.banner a {
+			color: #fff;
+		}
+		.banner a:hover {
+			color: #FF4500;
+		}
+		.tabs {
+			background-color: #146c89;
+            /*color: #fff;*/
+			-moz-border-radius: 0px;
+			-web-border-radius: 0px;
+			-ms-border-radius: 0px;
+			border-radius: 0px;
+			margin-bottom: 5px;
+			margin-top: 0;
+			border: 0;
+			padding: 0;
+		}
+	    .btn {
+			background: #146c89; 
+			border-radius: 0px;
+			border: none;
+		}
+		.nav-tabs.nav-justified > .active > a {
+			border:0;
+			/*color:#fff;*/
+			background: #FF4500;
+		}
+	    /*.nav-tabs.nav-justified > li {
+            border-radius:  0
+			margin: 0;
+			border: 0;
+			padding: 0;
+		}*/
+        /*the color of the words on the tabs*/
+		 .nav-tabs.nav-justified > li >a.btn {
+			 border-radius: 0;
+			 color: #fff;
+		 }
+		.nav-tabs.nav-justified > li >a:active {
+			background: #FF4500;
+			border-radius: 0px;
+			border: 0;
+		}
+		.nav-tabs > li.active > a {
+			/*color: #fff;*/
+           background-color: #FF4500;
+		}
+		.nav-tabs.nav-justified > li >a:hover {
+			background: #FF4500;
+			border-radius: 0px;
+			border: 0;
+		}
+
+		.tab-content {
+			padding:20px;
+		}
+		.panel-default {
+            border-color: #f6f6f6;
+        }
+		.panel {
+    margin-bottom: 20px;
+    background-color: #f6f6f6;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-body {
+    padding: 0px;
+}
+		.panel form {
+			height: 300px;;
+			padding: 10px;
+		}
+		.panel .help {
+			color:#666;
+			background: #fff;
+			height: 300px;;
+			padding: 15px;
+			font-size: 14px;
+		}
+	 .control-label {
+			color: #000;
+			font-weight: normal;
+			font-size:14px;
+		}
+		.form-control {
+			border-radius: 0;
+		}
+		.form-group .btn-default {
+			color: #fff;
+			background-color: #14586F;
+		}
+		.form-group .btn-default:hover {
+			color: #fff;
+			background: #FF4500;
+		}
+		.tab-pane {
+			color: #666;
+			font-size: 14px;
+		}
+
+
+
+
+
+
+
+
+body {
+    height: 100%;
+    font: 14px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #000;
+}
+
+p {font-size: 14px;}
+
+<!-- for the images and >
+
+.bg-1 { 
+      background-color: #1abc9c;
+      color: #ffffff;
+  }
+.bg-2 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+.bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+.bg-4 { 
+      background-color: #146c89;
+      color: #fff;
+  }
+.container-fluid {
+      padding-top: 42px;
+      padding-bottom: 42px;
+  }
+.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+.navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  footer {
+      background-color: #14586F;
+      color: #f5f5f5;
+      padding: 24px;
+  }
+  footer a {
+      color: #000;
+  }
+  footer a:hover {
+      color: #CCC;
+      text-decoration: none;
+  }
+  
