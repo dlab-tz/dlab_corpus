@@ -2,7 +2,6 @@
 
 include('connection/connect.php');
 include('includes/injection.php');
-include 'vendor/autoload.php';
 
 	
 	//download user profile photo
@@ -74,6 +73,7 @@ include 'vendor/autoload.php';
 	//user registration function
 	function registration($fullname,$gender,$mobile,$email,$recorder,$lname,$username,$position){
 		$url = 'corpus.php?manageUser=1';
+		
 		mysqli_query($connect, "INSERT INTO users VALUES('','$fullname','$gender','$mobile','$email','$recorder',now(),now())");
 		if(mysqli_error($connect)){
 			$error = urlencode('<span style="color:red"><br/>User registration failed</span>');
@@ -85,9 +85,13 @@ include 'vendor/autoload.php';
 		//create username
 		$get_id = mysqli_query($connect, "SELECT userid FROM users WHERE mobileno='$mobile'");
 		list($id) = mysqli_fetch_array($get_id, MYSQLI_BOTH);
+
 		
 		$password = MD5(strtoupper($lname));
 		mysqli_query($connect, "INSERT INTO login(username,userid,password,privilegeid) VALUES('$username','$id','$password','$position')");
+		
+		
+		
 		
 		if(mysqli_error($connect)){
 			mysqli_query($connect, "DELETE FROM login WHERE mobile='$mobile'");

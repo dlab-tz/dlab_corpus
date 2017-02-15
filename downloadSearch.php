@@ -103,7 +103,7 @@
 		else{
 			$tbl =<<<EOD
 				<br/><br/>
-				<table border="1" cellpadding="3" cellspacing="0" id="searchResult">
+				<table class="table table-responsive table-hovered" id="searchResult">
 					<tr>
 						<th><center>SNo</center></th>
 						<th><center>CATEGORY</center></th>

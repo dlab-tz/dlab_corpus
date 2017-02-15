@@ -58,7 +58,10 @@
 								<li><a data-toggle="tab" href="#frequency" class="btn btn-large">Frequency</a></li>
 								<li><a data-toggle="tab" href="#context" class="btn btn-large">Context</a></li>
 								<!--<li><a data-toggle="tab" href="#login" class="btn btn-large">Login</a></li>-->
-								<?php echo $login_variable;?>
+								<?php
+									$login_variable = ($_SESSION['userlogin']=='')? "<li><a data-toggle='tab' href='#login' class='btn btn-large'>Login</a></li>" :"<li><a data-toggle='tab' href='includes/logout.php' class='btn btn-large'>Logout ".$_SESSION['userlogin']."</a></li>"; 
+									echo $login_variable;
+								?>
 							</ul>
 						</div>
 					</div>

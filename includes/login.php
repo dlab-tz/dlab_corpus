@@ -4,13 +4,13 @@
 		session_start();
 		logout();
 		}
-	
-	
+
 	//logout function definition
 	function logout(){
 		$_SESSION['userlogin'] = '';
 		$_SESSION['passwordchange'] = '';
 		$_SESSION['privilege'] = '';
+		session_destroy();
 		header("Refresh:0; URL=http://".$_SERVER['HTTP_HOST']."/acalan");
 		}
 			

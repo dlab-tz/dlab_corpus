@@ -10,8 +10,7 @@
  * 
  */
 
-session_start();
-$counter_name = "counter.txt";
+$counter_name = "./counter.txt";
 
 //check if a text file exists. if not create one and initialize
 if (!file_exists($counter_name)){
@@ -36,7 +35,7 @@ if(!isset($_SESSION['hasVisited'])){
 }
 
 
-echo "You are visitor number: $counterVal";
+echo "You are visitor number: ".$counterVal;
 
 
 

@@ -42,7 +42,7 @@
 												</select>
 											</div>
 											
-										</div>
+									</div>
 									<div class="form-group">
 										<label for="Download" class="col-sm-3 control-label">Download</label>
 										<div class="col-sm-6">
@@ -475,10 +475,11 @@ EOD;
 													<button type="submit" name="Register_User" class="btn btn-default">Register User</button>
 												</div>
 											</div>
+											$_GET[error]<br/>
 									
 										</form>										
 										
-										$_GET[error]<br/>
+										
 								</div>
 								
 								<div id="searchUser">

@@ -1,7 +1,6 @@
 <?php
 
 	require_once('connection/connect.php');
-	$login_variable = ($_SESSION['userlogin']=='')? "<li><a data-toggle='tab' href='login' class='btn btn-large'>Login</a></li>" :"<li><a data-toggle='tab' href='login' class='btn btn-large'>Logout ".$_SESSION['userlogin']."</a></li>";
 	require_once('includes/header.php');
 	include('includes/menu.php');
 	include('includes/skeleton.php');
@@ -41,6 +40,7 @@
 	  <div class="tab-pane fade" id="context">
 		  Mara ukitafuta, matokeo yataonekana hapa.
 	  </div>
+	 <!--The login page-->
 	  <div class="tab-pane fade" id="login">
 	     <form class="form-horizontal" action="includes/login.php" method="POST" id="login" name="Login_Form">
 		 	<div class="form-group">
@@ -58,7 +58,6 @@
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-6">
 					<input type="submit" class="btn btn-default" id="Login" name="Login" value="Login">
-					<!--<button type="submit" class="btn btn-default" name="Login">Login</button>-->
 				</div>
 			</div>
 		 </form>

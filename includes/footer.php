@@ -1,11 +1,4 @@
- <!--<div class="container">
-   <footer class="row">
-	  <div class="col-sm-7">Copyright Tanzania Open Data Lab (dLab) &copy; <?php echo date('Y');?> All rights reserved
-	  </div>
-	  <div class="col-sm-5"><a href="http://www.dlab.or.tz/" target="_blank">dLab</a</div>
-	</footer>
-	</div>-->
-    </section>
+</section>
  </main>
 
     <!-- Footer -->
@@ -13,26 +6,18 @@
       <div class="row">
         <footer class="page-footer">
           <div class="container">
-            <div class="row">       
-                <!--<div class="stickyfooter">
-                    <div class="main-footer">-->
-                      <!--<div class="container">
-                        <div class="row">-->
-                          <div class="col-sm-9"> 
+            <div class="row">
+                  <div class="col-sm-9"> 
                             Swahili Corpus by <a href="http://www.dlab.or.tz/" target="_blank" data-toggle="tooltip" title="Visit Data Lab">Data Lab Tanzania</a>
                             &copy; <?php echo date('Y');?> All Rights Reserved
-                          </div>
-                          <div class="col-sm-3"> 
+                  </div>
+                  <div class="col-sm-3"> 
                               <?php
                               include ("counter.php");
                               ?>
-                          </div>
-                        <!--</div>
-                      </div>-->
-                    </div>
+                  </div>
                 </div>
-            <!--</div>
-          </div>-->
+            </div>
         </footer>
       </div>
     </div>

@@ -7,7 +7,7 @@
 	if(isset($_SESSION['userlogin'])){
 		if($_SESSION['userlogin']==''){
 			@header("Refresh:1; URL=http://".$_SERVER['HTTP_HOST']."/acalan");
-			echo "Please wait we are redirection you!<br/>";
+			echo "Please wait we are redirecting you!<br/>";
 			echo "If your browser doesn't support this, please, <a href='http://".$_SERVER['HTTP_HOST']."/acalan'>Click here</a>";
 			die();
 			}
